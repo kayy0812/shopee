@@ -112,6 +112,7 @@ html {
     left: 0;
     display: flex;
     animation: fadeIn linear .1s;
+    z-index: 999999999;
 }
 
 .modal__overlay {
