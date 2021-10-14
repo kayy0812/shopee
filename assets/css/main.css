@@ -397,8 +397,7 @@
 }
 
 .auth-form__social--facebook {
-
-    background-color: #3a5a98;
+    background-color: #3a5a98 !important;
 }
 
 .auth-form__title {
