@@ -275,27 +275,40 @@ html {
 
 /* Transition hover */
 /* Đặt vào thẻ cha cần hover */
-.transition-wrapper:hover 
+.transition-wrapper
 .has-transition,
 .transition-wrapper:hover + 
 .has-transition {
+    transition: all ease 0.3s 0.2s;
+}
+
+.transition-wrapper:hover 
+.has-transition,
+.transition-wrapper:hover + 
+.has-transition{
+    transition: all ease 0.3s 0.2s;
     visibility: visible;
 }
 
+
 /* Đặt vào thể cần transition khi hover vào thẻ cha hoặc thẻ ngang cấp có class transition-wrapper */
 .transition-wrapper 
-.has-transition.transition--scale-0,
-.transition-wrapper + 
 .has-transition.transition--scale-0 {
-    transition: all ease 0.3s 0.2s;
     transform: scale(0);
 }
 
 .transition-wrapper:hover 
-.has-transition.transition--scale-1,
-.transition-wrapper:hover +
 .has-transition.transition--scale-1  {
-    transition: all ease 0.3s 0.2s;
     transform: scale(1);
+}
+
+.transition-wrapper 
+.has-transition.transition--opacity-0 {
+    opacity: 0;
+}
+
+.transition-wrapper:hover 
+.has-transition.transition--opacity-1  {
+    opacity: 1;
 }
 

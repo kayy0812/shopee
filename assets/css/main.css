@@ -233,7 +233,7 @@
 }
 
 .header__navbar-account-menu {
-    display: none;
+    visibility: hidden;
     position: absolute;
     top: calc(100% + 10px);
     right: 0;
@@ -244,7 +244,6 @@
     z-index: 2;
     box-shadow: 0 0 3px #ccc;
     border-radius: 2px;
-    animation: fadeIn ease-in .2s;
 }
 
 .header__navbar-account::before {
@@ -638,19 +637,15 @@
     color: var(--primary-color);
 }
 
-.header__general-cart:hover 
-.header__general-cart-list {
-    display: flex;
-}
-
 .header__general-cart-icon {
     color: var(--white-color);
     font-size: 2.2rem;
 }
 
 .header__general-cart-list {
+    display: flex;
     position: absolute;
-    display: none;
+    visibility: hidden;
     flex-direction: column;
     right: 0;
     top: calc(100% + 10px);
